@@ -58,8 +58,6 @@
     document.getElementById('copy-button').addEventListener('click', function() {
       const dummyLink = 'https://github.com/Sachin-M-at-git/AppUpdates/releases/download/Updates/app-debug.apk'; // Replace with the actual link
       navigator.clipboard.writeText(dummyLink).then(function() {
-        const tooltip = document.querySelector('.cp-tooltip');
-        tooltip.textContent = tooltip.getAttribute('data-text-end');
         document.querySelector('.cp-clipboard').style.display = 'none';
         document.querySelector('.cp-check-mark').style.display = 'block';
       });
